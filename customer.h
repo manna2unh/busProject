@@ -8,7 +8,7 @@
 #include <string>
 using namespace std;
 
-class Customer {
+class Customer { //class for customers to keep track of customers info
 public:
     string customerID;
     string name;

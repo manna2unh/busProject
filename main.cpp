@@ -7,12 +7,11 @@ using namespace std;
 void displayMenu();
 void bookBusTrip(vector<Ticket>& tickets);
 void displayTicketInfo(const vector<Ticket>& tickets);
-
 int main() {
     vector<Ticket> tickets;
     int choice;
 
-    cout << "Welcome to the 777 Bus System! Take Ticket and Choose Options: " << endl;
+    cout << "Welcome to the 777 Transporters Bus System! Take Ticket and Choose Options: " << endl;
 
     do {
         displayMenu();
