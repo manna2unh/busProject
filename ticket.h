@@ -7,7 +7,7 @@
 
 #include <string>
 using namespace std;
-class Ticket {
+class Ticket { //class for "Ticket" which holds all ticket information for any purchased
 public:
     Ticket(const string& name, const string& date, const string& depart, const string& arrival,
            const string& distance, const string& driver, int busModel, const string& code);

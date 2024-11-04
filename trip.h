@@ -6,8 +6,8 @@
 #define BUSPROJECT_TRIP_H
 #include <string>
 using namespace std;
-
-class Trip{
+//class is for holding trip info and data
+class Trip {
 public:
     string tripID;
     string destination;

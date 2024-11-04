@@ -1,5 +1,5 @@
 //
-// Created by m_ann on 11/4/2024.
+// Created by Nicole Hernadez on 11/4/2024.
 //
 
 #ifndef BUSPROJECT_CUSTOMER_H
@@ -8,7 +8,7 @@
 #include <string>
 using namespace std;
 
-class Customer {
+class Customer { //class for customers to keep track of customers info
 public:
     string customerID;
     string name;
