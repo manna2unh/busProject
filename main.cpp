@@ -24,7 +24,7 @@ int main() {
         cin >> choice;
         cin.ignore();
 
-        switch (choice) {
+        switch (choice) { //menu choice to add trip to routes class which will hold all input trips
             case 1: {
                 string source, destination, driver, busModel;
                 double distance;
@@ -45,7 +45,7 @@ int main() {
                 routes.addRoute(source, destination, distance, driver, busModel, maxTravelers);
                 break;
             }
-            case 2: {
+            case 2: { //option to display routes and delete any that have been entered in and are within the routes class
                 routes.displayRoutes();
                 int routeIndex;
                 cout << "Enter route number to remove: ";
@@ -54,9 +54,9 @@ int main() {
                 break;
             }
             case 3: {
-                routes.displayRoutes();
+                routes.displayRoutes(); //option to book a ticket with a chosen route, name code, and the type of discount
                 int routeIndex;
-                cout << "Select a route to book: ";
+                cout << "Select a route to book: " //prompts for route
                 cin >> routeIndex;
                 cin.ignore();
                 double distance = routes.getRouteDistance(routeIndex - 1);
@@ -66,11 +66,11 @@ int main() {
                 }
                 string name, code;
                 int category;
-                cout << "Enter Passenger Name: ";
+                cout << "Enter Passenger Name: "; //prompts for passenger name
                 getline(cin, name);
-                cout << "Enter Confirmation Code: ";
+                cout << "Enter Confirmation Code: ";//prompts for passenger confirmation code
                 getline(cin, code);
-                cout << "Enter Discount Category: " << endl;
+                cout << "Enter Discount Category: " << endl; //prompts for passenger discount if applied
                 cout << "1: Online / Student: 15% " << endl;
                 cout << "2: Military/Veteran: 10%" << endl;
                 cout << "3: BUS_TRIPS Club Member: 20% " << endl;
@@ -78,7 +78,7 @@ int main() {
                 double discount = calculateDiscount(category);
                 double price = distance * 0.5;
                 double priceAfterDiscount = price - (price * discount);
-                Ticket ticket(name, code, "Route Information", priceAfterDiscount, discount);
+                Ticket ticket(name, code, "Route Information", priceAfterDiscount, discount); //saves info entered into ticket information
                 trip.addPassengerTicket(ticket);
                 cout << "Ticket booked successfully!" << endl;
                 cout << "Original Price: $" << price << endl;
@@ -86,17 +86,17 @@ int main() {
                 cout << "Price After Discount: $" << priceAfterDiscount << endl;
                 break;
             }
-            case 4: {
+            case 4: { //option to cancel any ticket enetered with the ticket class by entering code
                 string code;
                 cout << "Enter Confirmation Code to Cancel Ticket: ";
                 getline(cin, code);
                 trip.cancelTicket(code);
                 break;
             }
-            case 5:
+            case 5: //choice to display all tickets that have been entered into system
                 trip.displayAllTickets();
                 break;
-            case 6:
+            case 6: //option to exit out of code
                 cout << "Exiting system. Goodbye!" << endl;
                 break;
             default:
@@ -106,7 +106,7 @@ int main() {
 
     return 0;
 }
-double calculateDiscount(int category) {
+double calculateDiscount(int category) { //function to calculate discount applied to ticket price
     double discount = 0.0;
 
     // Apply the discount based on the category chosen by the user

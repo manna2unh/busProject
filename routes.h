@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 using namespace std;
-class Routes {
+class Routes { //class for routes that holds all functions,structs, and variables
 public:
     Routes();
     void addRoute(string source, string destination, double distance, string driver, string busModel, int maxTravelers);

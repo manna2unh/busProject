@@ -6,7 +6,7 @@
 #define CORRECTBUSPROJECT_TICKET_H
 #include <string>
 using namespace std;
-class Ticket {
+class Ticket { //ticket class that holds all variables and public and private ifno
 public:
     Ticket(string name, string code, string route, double price, double discount);
     void displayTicket();

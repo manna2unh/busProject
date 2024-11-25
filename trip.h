@@ -8,7 +8,7 @@
 #include "ticket.h"
 #include <vector>
 using namespace std;
-class Trip {
+class Trip { //class to hold all trip info
 public:
     void addPassengerTicket(Ticket ticket);
     void displayAllTickets();
