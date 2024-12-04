@@ -6,17 +6,18 @@
 #define CORRECTBUSPROJECT_CUSTOMER_H
 #include <string>
 using namespace std;
-class Customer {
+class Customer 
+{
 public:
     Customer(string name, string type, string discountType);
-    string getName();
-    string getType();
-    string getDiscountType();
+    string getName();//name of user
+    string getType();// "Driver" or "Passenger"
+    string getDiscountType();// "Student", "Military", "Online".
 
 private:
-    string name;
+    string name;//name of user
     string type; // "Driver" or "Passenger"
-    string discountType; // "Student", "Military", "Online", etc.
+    string discountType; // "Student", "Military", "Online".
 };
 
 #endif //CORRECTBUSPROJECT_CUSTOMER_H
