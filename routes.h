@@ -9,7 +9,7 @@
 using namespace std;
 class Routes { //class for routes that holds all functions,structs, and variables
 public:
-    Routes();
+    Routes();//shows the routes
     void addRoute(string source, string destination, double distance, string driver, string busModel, int maxTravelers);
     void removeRoute(int routeIndex);
     void displayRoutes();
