@@ -1,3 +1,4 @@
+//function to create a trip for a customer and apply discounts as needed
 #include <iostream>
 #include "Routes.h"
 #include "Trip.h"
@@ -7,7 +8,8 @@ using namespace std;
 
 double calculateDiscount(int category);
 
-int main() {
+int main() 
+{
     Routes routes;
     Trip trip;
     int choice;
@@ -121,9 +123,10 @@ double calculateDiscount(int category) { //function to calculate discount applie
             discount = 0.20;  // 20% discount
             break;
         default:
-            cout << "Invalid category chosen. No discount applied." << endl;
+            cout << "Invalid choice. No discount applied." << endl;
             break;
     }
 
     return discount;
 }
+//end of function
