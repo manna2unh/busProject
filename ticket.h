@@ -12,7 +12,7 @@ public:
     void displayTicket();
     double getTotalPrice() const;
     string getConfirmationCode() const;
-
+//gets name, confirmation code and applies discounts(if applicable)
 private:
     string passengerName;
     string confirmationCode;
