@@ -9,7 +9,7 @@ Routes::Routes() { //routes class that holds lists of routes and functions to re
     routeList = {
             {"Downtown", "Airport", 20, "Nicole Hernadez", "NH3", 50},
             {"Suburbs", "Downtown", 30, "Jeremiah Kodjo", "JK7", 40},
-            {"Airport", "Farmlands", 55, "Myles Annan", "JK7", 30}
+            {"Airport", "Farmlands", 55, "Myles Annan", "MA5", 30}
     };
 }
 
